@@ -1,7 +1,7 @@
 // FIXME configure Auth0 to use application corresponding to this clientId
 const API_BASE_URL = 'https://7h021chrmj.execute-api.us-west-2.amazonaws.com/prod';
 const AUTH0_DOMAIN = 'butlrtech.us.auth0.com';
-const AUTH0_CLIENT_ID = 'IR0eBGpqN12Qm1CQ4sdUY3y11wIe2Tax';
+const AUTH0_CLIENT_ID = 'y0xkRzCkuo8w9CslFjJv5Q0MvVV1vKYB';
 
 const configureClient = () => createAuth0Client({
   domain: AUTH0_DOMAIN,
