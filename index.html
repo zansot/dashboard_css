@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluation Dashboard</title>
+
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+  <script src="Chart.js"></script>
+  <script src="dayjs.min.js"></script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1440px;
+      width: 100vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .chart {
+      height: 40rem;
+      max-height: 90vh;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="btn-logout">Log out</button>
+
+  <div class="container">
+    <!-- daily traffic index -->
+    <div class="chart">
+      <canvas id="daily-traffic-chart"></canvas>
+    </div>
+
+    <!-- weekly traffic index -->
+    <div class="chart">
+      <canvas id="weekly-traffic-chart"></canvas>
+    </div>
+  </div>
+
+  <pre id="output"></pre>
+
+  <script src="app.js"></script>
+
+  <script src="round-corner.js"></script>
+</body>
+
+</html>
